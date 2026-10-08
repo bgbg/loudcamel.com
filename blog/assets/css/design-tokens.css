@@ -1,0 +1,50 @@
+/*
+ * Loud Camel design tokens — VENDORED COPY (Adored Vintage brand).
+ *
+ * Source of truth: loud_camel app repo -> design-system/index.css, established
+ * by the Adored Vintage brand foundation (bgbg/growme#966, milestone #999).
+ *   https://github.com/bgbg/growme/blob/main/design-system/index.css
+ *
+ * The app defines these inside Tailwind's `@theme {}`; here they are plain CSS
+ * custom properties on :root so this (Tailwind-free) Jekyll site can use the
+ * exact same palette and fonts. These cream/espresso/goldenrod values were
+ * ported BY HAND from #966 for the rebrand (the app stylesheet can't be
+ * imported across repos) — they are NOT auto-synced, so keep them in sync with
+ * the app by hand; `bin/sync-tokens.sh` diffs against upstream for review.
+ */
+:root {
+  /* Backgrounds — buttery cream paper */
+  --color-bg:      #FBF4E0;   /* page background */
+  --color-bg-card: #FFFCF8;   /* warm white, lifts off cream */
+  --color-bg-deep: #EFE0C6;
+  --color-bg-tint: #FDF8EC;
+
+  /* Ink — espresso text scale */
+  --color-ink:       #1E180D; /* body text */
+  --color-ink-soft:  #3A3020;
+  --color-ink-muted: #6E6149;
+  --color-ink-faint: #A99A80;
+
+  /* Rules / hairlines */
+  --color-rule:      #E7D9BE;
+  --color-rule-soft: #F1E8D2;
+
+  /* Signature accent — goldenrod honey */
+  --color-yellow:      #E3A53C; /* highlighter, marks, glow */
+  --color-yellow-deep: #9A6410; /* accent text + LINKS */
+  --color-yellow-pale: #DFBD9C;
+
+  /* Dark sections — espresso */
+  --color-dark:      #1E180D;
+  --color-dark-soft: #2E2516;
+
+  /* Editorial typography — same families loaded via Google Fonts in <head>,
+     mirroring the app's frontend/index.html. */
+  --font-display: 'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif;
+  --font-body: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Layout */
+  --container-max: 88rem;   /* wide page chrome (index grid uses the full width) */
+  --measure: 48rem;         /* article reading column (~75ch), centered on wide pages */
+}

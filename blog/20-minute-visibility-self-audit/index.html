@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 20-minute visibility self-audit (no tools, no dashboard) — Loud Camel</title>
+<meta name="description" content="A do-it-yourself, four-check visibility audit any researcher can run in twenty minutes: what ChatGPT and Perplexity say about you, whether Google Scholar merged your records, and whether your pages block AI crawlers.">
+<link rel="canonical" href="https://loudcamel.com/blog/20-minute-visibility-self-audit/">
+<meta name="author" content="Boris Gorelik">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://loudcamel.com/blog/20-minute-visibility-self-audit/">
+<meta property="og:title" content="The 20-minute visibility self-audit (no tools, no dashboard)">
+<meta property="og:description" content="A do-it-yourself, four-check visibility audit any researcher can run in twenty minutes: what ChatGPT and Perplexity say about you, whether Google Scholar merged your records, and whether your pages block AI crawlers.">
+<meta property="og:image" content="https://loudcamel.com/logo-mark.png">
+<meta property="og:site_name" content="Loud Camel">
+<meta property="article:published_time" content="2026-08-14T00:00:00+00:00">
+<meta property="article:author" content="Boris Gorelik">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The 20-minute visibility self-audit (no tools, no dashboard)">
+<meta name="twitter:description" content="A do-it-yourself, four-check visibility audit any researcher can run in twenty minutes: what ChatGPT and Perplexity say about you, whether Google Scholar merged your records, and whether your pages block AI crawlers.">
+<meta name="twitter:image" content="https://loudcamel.com/logo-mark.png">
+
+<!-- Brand assets (shared with the app by absolute URL so they never drift) -->
+<link rel="icon" type="image/png" href="https://loudcamel.com/favicon.png">
+<link rel="apple-touch-icon" href="https://loudcamel.com/apple-touch-icon.png">
+
+<!-- Fonts: Adored Vintage (Bricolage Grotesque + Inter Tight), matching the app's frontend/index.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Inter+Tight:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/blog/assets/css/design-tokens.css">
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!-- RSS/Atom -->
+<link rel="alternate" type="application/atom+xml" title="Loud Camel Blog" href="/blog/feed.xml">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://loudcamel.com/blog/20-minute-visibility-self-audit/" },
+  "headline": "The 20-minute visibility self-audit (no tools, no dashboard)",
+  "description": "A do-it-yourself, four-check visibility audit any researcher can run in twenty minutes: what ChatGPT and Perplexity say about you, whether Google Scholar merged your records, and whether your pages block AI crawlers.",
+  "image": "https://loudcamel.com/logo-mark.png",
+  "datePublished": "2026-08-14T00:00:00+00:00",
+  "dateModified": "2026-08-14T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Boris Gorelik",
+    "url": "https://loudcamel.com",
+    "sameAs": ["https://orcid.org/0009-0006-7721-5175"]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Loud Camel",
+    "url": "https://loudcamel.com",
+    "logo": { "@type": "ImageObject", "url": "https://loudcamel.com/logo-mark.png" }
+  },
+  "keywords": ["ai-search","seo","research-metrics","citations"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://loudcamel.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://loudcamel.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "The 20-minute visibility self-audit (no tools, no dashboard)", "item": "https://loudcamel.com/blog/20-minute-visibility-self-audit/" }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I check whether AI tools surface my research?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ask ChatGPT and Perplexity three questions your work answers: who you're, what the research on your topic says, and who the key researchers are. If you're not named and your paper isn't cited, you've a findability gap you can start fixing the same afternoon." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I repeat a visibility self-audit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Quarterly by hand is enough for most people. Run it again around a new paper, a name change, or a move to a new institution, because that's when your records drift." }
+    }
+  ]
+}
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="https://loudcamel.com/">
+      <img class="brand__mark" src="https://loudcamel.com/logo-mark.png" alt="Loud Camel" width="64" height="64">
+      <span class="brand__text">
+        <span class="brand__name">Loud Camel</span>
+        <span class="brand__tag">Notes on research visibility</span>
+      </span>
+    </a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="/blog/">Blog</a>
+      <a href="/blog/topics/">Topics</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="site-main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="https://loudcamel.com/">Home</a> ›
+  <a href="/blog/">Blog</a> ›
+  <span>The 20-minute visibility self-audit (no tools, no dashboard)</span>
+</nav>
+
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">The 20-minute visibility self-audit (no tools, no dashboard)</h1>
+    <p class="post__meta">
+      By Boris Gorelik ·
+      <time datetime="2026-08-14T00:00:00+00:00">August 14, 2026</time>
+    </p>
+  </header>
+
+  <div class="post__body">
+    <p>TL;DR: You can check whether AI tools and search engines actually surface your research in about twenty minutes, with no software and no dashboard. Run four checks by hand: what ChatGPT and Perplexity say about you, whether your Google Scholar profile is merged correctly, whether your pages block AI crawlers, and whether you show up for the question a real citer would type. If you’re missing, that’s usually a findability gap, not a quality gap, and findability is the fixable kind.</p>
+
+<p>You spent eight months on a paper. It got through review, it got a DOI, it is sitting on the publisher’s site right now. Then you open ChatGPT, ask it the exact question your paper was built to answer, and read the response. Your work is not in it. Someone else’s is.</p>
+
+<p>That’s worth knowing, and you don’t need to buy anything to find out. This post is a numbered, timed checklist you run by hand in twenty minutes. It won’t fix your visibility. It tells you whether you’ve a problem, and roughly where.</p>
+
+<h2 id="why-run-a-visibility-audit-at-all">Why run a visibility audit at all?</h2>
+
+<p>Because your future reader is increasingly a machine, or a person leaning on one. A 2025 Wiley survey of 2,430 researchers (the ExplanAItions study) found AI use among researchers rose from 57% to 84% in a single year, with 62% using it for research and publication tasks. When the finder is a machine, it can only surface what it can parse. I wrote about that mechanism in <a href="/blog/what-ai-search-actually-sees/">What AI search actually sees</a>. This is how you check yourself against it.</p>
+
+<h2 id="the-20-minute-checklist">The 20-minute checklist</h2>
+
+<p>Set a timer. Have your name, your main topic, and your Google Scholar and personal or institutional page open. Write your findings in a plain text file as you go; you’ll want the list afterward.</p>
+
+<h3 id="minutes-0-to-6-ask-chatgpt-and-perplexity-about-you">Minutes 0 to 6: Ask ChatGPT and Perplexity about you</h3>
+
+<p>Open ChatGPT and Perplexity in two tabs. In each, run three prompts:</p>
+
+<ul>
+  <li>“Who is [your full name], and what is their research about?”</li>
+  <li>“What does the research say about [your specific topic or finding]?”</li>
+  <li>“Who are the key researchers working on [your topic]?”</li>
+</ul>
+
+<p>Read what comes back. Are you named? Is your work described correctly, or confused with a namesake? For the topic prompts, does your paper get cited, or is the answer built entirely from other people? Note it. Perplexity shows its sources, so you can see which pages it trusts; ask ChatGPT to list its sources too.</p>
+
+<h3 id="minutes-6-to-11-check-your-google-scholar-profile-for-bad-merges">Minutes 6 to 11: Check your Google Scholar profile for bad merges</h3>
+
+<p>Open your Google Scholar profile and look for two failures. First, missing records: papers of yours that aren’t attached to your profile, which means Scholar (and anything that reads Scholar) doesn’t credit them to you. Second, wrong merges: a single “paper” that has swallowed two different works, or your record blended with a namesake’s. Both quietly split or mislabel your citation record, which is what an AI tool reads when it decides who you’re. Fix what you can from the profile’s edit tools. If you’ve a common name, this is where most of your damage hides. (More on this in <a href="/blog/google-scholar-seo-how-researchers-get-found/">Google Scholar SEO</a>.)</p>
+
+<h3 id="minutes-11-to-15-see-whether-your-pages-block-ai-crawlers">Minutes 11 to 15: See whether your pages block AI crawlers</h3>
+
+<p>Go to your personal site or your institutional profile page. Add /robots.txt to the domain root and load it. Look for lines like “User-agent: GPTBot” followed by “Disallow: /”, and the same for PerplexityBot, ClaudeBot, Google-Extended, or CCBot. Then view the page source and search for a robots meta tag carrying “noai” or “noindex”. If any of these are blocking the crawlers, the AI tools you just tested aren’t allowed to read that page, and you may not have known. This is more common than you would guess: a 2025 BuzzStream analysis of 100 top US and UK news sites found 62% block GPTBot, and institutions copy those defaults. You can’t always change the institution’s file, but you can find out, and you can host an open version somewhere you control.</p>
+
+<h3 id="minutes-15-to-20-run-the-query-a-real-citer-would-type">Minutes 15 to 20: Run the query a real citer would type</h3>
+
+<p>Stop searching for your name. A stranger who might cite you doesn’t know your name yet. Write down the two or three questions someone would type if they needed exactly what your paper provides, in their words, not your title’s words. Run each one in Google, in Google Scholar, and in one AI tool. Are you on the first screen anywhere? If your paper only appears when you already know to look for it, it’s not findable by the people who most need it.</p>
+
+<h2 id="what-do-you-do-with-the-results">What do you do with the results?</h2>
+
+<p>Look at your notes. If you showed up in all four, good, you’ve confirmed something most researchers never check. If you didn’t, resist reading it as a verdict on the work. A missing merge, a blocked crawler, a clever title no stranger would search: none of those are about quality, and all of them are fixable in an afternoon. Start with the basics: an open version of the text, a clear title, a plain-language summary, and one consistent spelling of your name across every profile.</p>
+
+<h2 id="why-is-this-a-pain-to-keep-doing-yourself">Why is this a pain to keep doing yourself?</h2>
+
+<p>Here is the honest part. Twenty minutes is not much, but the answer changes. Models get retrained, your profile drifts, a co-author’s namesake muddies your record, an institution updates its robots.txt. Do it once and you’ve a snapshot. To keep it true you would run it again every month, across more tools than two, for every paper. That is tedious by hand, which is the whole reason it goes undone.</p>
+
+<p>That repetition is what we built Loud Camel to handle. It runs this same scan across the AI tools and search engines on a schedule, tells you where you’ve dropped out of the answer, and drafts the follow-up that would fix it: an email to the author who cited near you, a summary to post, a profile line to correct. It drafts. It doesn’t send anything on its own; you approve every message. The checklist above is the manual version of what the scan does, and you should run it yourself first, with or without us.</p>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+
+<p><strong>Do I need a paid tool to do this?</strong> No. Every check uses a free tool you already have: ChatGPT, Perplexity, Google, Google Scholar, and your browser’s view-source.</p>
+
+<p><strong>What if I show up but the AI describes my work wrong?</strong> That’s a real finding. It usually means the machine is reading a thin or outdated source, an old bio or a bare abstract. Give it a better one: a current, open, plain-language summary on a page it can reach.</p>
+
+<p>If you run the audit and you’re already everywhere you should be, close the tab and get back to work. If you’re not, you now know which of the four to fix first, which is more than you knew twenty minutes ago.</p>
+
+  </div>
+  <footer class="post__taxonomy">
+    <a class="chip chip--category" href="/blog/category/guides/">guides</a>
+    <a class="chip" href="/blog/tag/ai-search/">ai-search</a>
+    <a class="chip" href="/blog/tag/seo/">seo</a>
+    <a class="chip" href="/blog/tag/research-metrics/">research-metrics</a>
+    <a class="chip" href="/blog/tag/citations/">citations</a>
+  </footer>
+</article>
+<aside class="related">
+  <h2>Keep reading</h2>
+  <ul>
+    <li><a href="/blog/pedigree-outranks-papers/">Does your PhD's pedigree decide your career more than your papers do?</a></li>
+    <li><a href="/blog/clean-up-your-google-scholar-profile/">Who else is on your Google Scholar profile?</a></li>
+    <li><a href="/blog/does-a-career-grant-stop-brain-drain/">Does a career grant actually stop brain drain?</a></li>
+  </ul>
+</aside>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <a class="site-footer__logo" href="https://loudcamel.com/">
+      <img src="https://loudcamel.com/logo-mark.png" alt="Loud Camel" width="auto" height="32">
+    </a>
+    <nav class="site-footer__nav">
+      <div class="site-footer__primary">
+        <a href="/blog/">Blog</a>
+      </div>
+      <div class="site-footer__legal">
+        <a href="https://loudcamel.com/blog/feed.xml" type="application/atom+xml" rel="alternate" title="RSS feed">RSS</a>
+      </div>
+    </nav>
+    <p class="site-footer__copy">© 2026 Loud Camel. The service closed in 2026; these notes stay online.</p>
+  </div>
+</footer>
+
+</body>
+</html>

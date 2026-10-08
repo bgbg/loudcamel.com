@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who else is on your Google Scholar profile? — Loud Camel</title>
+<meta name="description" content="A practical guide to cleaning up your Google Scholar profile: remove a namesake&#39;s papers, add back your own missing or split records, and fix attribution so search and AI credit the right author.">
+<link rel="canonical" href="https://loudcamel.com/blog/clean-up-your-google-scholar-profile/">
+<meta name="author" content="Boris Gorelik">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://loudcamel.com/blog/clean-up-your-google-scholar-profile/">
+<meta property="og:title" content="Who else is on your Google Scholar profile?">
+<meta property="og:description" content="A practical guide to cleaning up your Google Scholar profile: remove a namesake&#39;s papers, add back your own missing or split records, and fix attribution so search and AI credit the right author.">
+<meta property="og:image" content="https://loudcamel.com/logo-mark.png">
+<meta property="og:site_name" content="Loud Camel">
+<meta property="article:published_time" content="2026-08-26T00:00:00+00:00">
+<meta property="article:author" content="Boris Gorelik">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Who else is on your Google Scholar profile?">
+<meta name="twitter:description" content="A practical guide to cleaning up your Google Scholar profile: remove a namesake&#39;s papers, add back your own missing or split records, and fix attribution so search and AI credit the right author.">
+<meta name="twitter:image" content="https://loudcamel.com/logo-mark.png">
+
+<!-- Brand assets (shared with the app by absolute URL so they never drift) -->
+<link rel="icon" type="image/png" href="https://loudcamel.com/favicon.png">
+<link rel="apple-touch-icon" href="https://loudcamel.com/apple-touch-icon.png">
+
+<!-- Fonts: Adored Vintage (Bricolage Grotesque + Inter Tight), matching the app's frontend/index.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Inter+Tight:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/blog/assets/css/design-tokens.css">
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!-- RSS/Atom -->
+<link rel="alternate" type="application/atom+xml" title="Loud Camel Blog" href="/blog/feed.xml">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://loudcamel.com/blog/clean-up-your-google-scholar-profile/" },
+  "headline": "Who else is on your Google Scholar profile?",
+  "description": "A practical guide to cleaning up your Google Scholar profile: remove a namesake's papers, add back your own missing or split records, and fix attribution so search and AI credit the right author.",
+  "image": "https://loudcamel.com/logo-mark.png",
+  "datePublished": "2026-08-26T00:00:00+00:00",
+  "dateModified": "2026-08-26T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Boris Gorelik",
+    "url": "https://loudcamel.com",
+    "sameAs": ["https://orcid.org/0009-0006-7721-5175"]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Loud Camel",
+    "url": "https://loudcamel.com",
+    "logo": { "@type": "ImageObject", "url": "https://loudcamel.com/logo-mark.png" }
+  },
+  "keywords": ["seo","ai-search","personal-branding","authorship"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://loudcamel.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://loudcamel.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Who else is on your Google Scholar profile?", "item": "https://loudcamel.com/blog/clean-up-your-google-scholar-profile/" }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I remove a paper from Google Scholar that isn't mine?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sign in to your own profile, tick the checkbox next to the paper, and click the Delete button in the bar at the top of your article list. You can also open the paper and use the correction option to mark that you're not an author. Either way it leaves your profile." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I merge two Google Scholar profiles?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Google Scholar does not merge whole profiles. Keep one profile as your main one and pull the missing articles onto it using the add button above your article list, searching every spelling of your name." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a wrongly attributed paper matter for AI search?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AI answer engines credit whoever the record says wrote the work. If a namesake's paper sits on your profile, or one of yours is missing, the machine can attribute the wrong work to you or miss you entirely." }
+    }
+  ]
+}
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="https://loudcamel.com/">
+      <img class="brand__mark" src="https://loudcamel.com/logo-mark.png" alt="Loud Camel" width="64" height="64">
+      <span class="brand__text">
+        <span class="brand__name">Loud Camel</span>
+        <span class="brand__tag">Notes on research visibility</span>
+      </span>
+    </a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="/blog/">Blog</a>
+      <a href="/blog/topics/">Topics</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="site-main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="https://loudcamel.com/">Home</a> ›
+  <a href="/blog/">Blog</a> ›
+  <span>Who else is on your Google Scholar profile?</span>
+</nav>
+
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">Who else is on your Google Scholar profile?</h1>
+    <p class="post__meta">
+      By Boris Gorelik ·
+      <time datetime="2026-08-26T00:00:00+00:00">August 26, 2026</time>
+    </p>
+  </header>
+
+  <div class="post__body">
+    <p>You type your own name into Google Scholar to see what a reviewer would see, and something is off. There’s a paper you never wrote, in a field next to yours, sitting under your name. And a paper you did write, the one you actually want people to find, is nowhere on the profile. Somewhere out there is a namesake, and Google Scholar has quietly mixed the two of you together.</p>
+
+<p>Here is the short version. A Google Scholar profile is an attribution record, and right now that record is upstream of almost everything: who gets found, who gets cited, and who an AI assistant names when someone asks a question your work answers. If the record is wrong, the credit goes to the wrong place. Cleaning it up takes an afternoon, and this is how.</p>
+
+<h2 id="why-a-messy-profile-is-now-an-attribution-problem">Why a messy profile is now an attribution problem</h2>
+
+<p>For years a stray paper on your profile was cosmetic. A slightly inflated citation count, a category that didn’t fit. Annoying, not costly.</p>
+
+<p>That changed when discovery started running through machines. An AI answer engine doesn’t judge your work. It retrieves text, and it attributes that text to whoever the record says produced it. If your profile says you wrote a namesake’s paper, that’s now part of your machine-readable identity. If a real paper of yours is missing, or split across two half-records, the machine has less to connect to you, and it reaches for whoever is easier to attribute cleanly. I wrote about that pull toward the already-visible in <a href="/blog/what-ai-search-actually-sees/">what AI search actually sees</a>.</p>
+
+<p>So the goal is not a longer profile. It is a correct one. Every paper on it’s yours, every paper of yours is on it, and your name reads the same way each time.</p>
+
+<h2 id="step-1-remove-the-papers-that-arent-yours">Step 1: Remove the papers that aren’t yours</h2>
+
+<p>Sign in and open your own profile, the one you can edit. Read the list slowly, top to bottom, and flag anything you didn’t write. Namesakes cluster in adjacent fields, so a wrong paper often looks plausible at a glance.</p>
+
+<p>To remove one, tick the checkbox to its left and click the Delete button in the bar at the top of the list. If you would rather work from the paper itself, open it and use the correction option to say you’re not an author. Either way it leaves your profile.</p>
+
+<h2 id="step-2-add-back-the-ones-that-are-and-merge-the-splits">Step 2: Add back the ones that are, and merge the splits</h2>
+
+<p>Now the opposite problem: your own papers that never made it on, or that Scholar recorded twice.</p>
+
+<p>To add a missing paper, use the add button (the plus above your article list) and choose to add articles. Search your name, then search every variant of it: initials, maiden name, transliterations, the spelling a copy editor once “fixed.” Tick the ones that are actually yours and add them. Note that Scholar will not merge two whole profiles into one. If a second, ghost profile exists, this is how you pull its articles onto your main one.</p>
+
+<p>For a paper that appears twice, click the “Title” column header so the duplicates line up next to each other. Tick both, click Merge, and keep the version with the cleanest metadata. Merging also stitches split citation counts back together, which fixes a number that was always yours.</p>
+
+<h2 id="step-3-pick-one-name-and-keep-it">Step 3: Pick one name and keep it</h2>
+
+<p>Most attribution damage comes from one thing: publishing under three spellings of the same name.</p>
+
+<p>Decide on one canonical form. Click the edit icon next to your name and set it. Then use that exact form from now on, on submissions, on your ORCID record, in your institutional bio. Consistency is what lets a machine collapse a career’s worth of papers into one person, which is the whole point of the exercise. (This is the same identity hygiene behind <a href="/blog/personal-branding-for-researchers-the-complete-guide/">personal branding for researchers</a>.)</p>
+
+<h2 id="step-4-turn-on-alerts-then-look-at-yourself-as-a-stranger">Step 4: Turn on alerts, then look at yourself as a stranger</h2>
+
+<p>A profile doesn’t stay clean on its own, because Scholar keeps adding papers it thinks are yours, and a namesake’s next paper is a coin flip.</p>
+
+<p>Two settings help. First, configure article updates so Scholar emails you to review new additions instead of adding them silently. That one change stops the intruder problem from coming back. Second, use the Follow button at the top of your profile to get email when new articles are attributed to you and when your work is cited, so you notice a wrong merge the week it happens rather than a year later.</p>
+
+<p>Then do the check you started with, deliberately. Open a private browser window, or sign out, and search your name the way a grant reviewer or an AI crawler would, with no login and no memory of what should be there. If the public profile shows only your work, and shows all of it, you’re done.</p>
+
+<h2 id="common-questions">Common questions</h2>
+
+<p><strong>How do I remove a paper that isn’t mine?</strong> Tick its checkbox and click Delete in the top bar, or open the paper and mark that you’re not an author.</p>
+
+<p><strong>Can I merge two profiles?</strong> No. Keep one as your main profile and pull the other’s articles onto it with the add button.</p>
+
+<p><strong>Does a split citation count hurt me?</strong> Yes, quietly. Two half-records show two small numbers instead of one real one, and both humans and machines read the smaller figure.</p>
+
+<h2 id="where-this-fits">Where this fits</h2>
+
+<p>Attribution is the unglamorous half of visibility, and it’s easy to skip because nothing breaks loudly when you get it wrong. Loud Camel’s scan checks it for you: it flags papers attributed to the wrong person and your own work that Scholar has dropped or split, and it drafts the outreach that a clean profile makes possible. It drafts. It never sends anything on its own, and you approve every message. Fix the record first, though, with us or without us. A machine can only credit you correctly if the record already does.</p>
+
+  </div>
+  <footer class="post__taxonomy">
+    <a class="chip chip--category" href="/blog/category/guides/">guides</a>
+    <a class="chip" href="/blog/tag/seo/">seo</a>
+    <a class="chip" href="/blog/tag/ai-search/">ai-search</a>
+    <a class="chip" href="/blog/tag/personal-branding/">personal-branding</a>
+    <a class="chip" href="/blog/tag/authorship/">authorship</a>
+  </footer>
+</article>
+<aside class="related">
+  <h2>Keep reading</h2>
+  <ul>
+    <li><a href="/blog/reviewers-look-you-up/">A reviewer looks you up before they score you. What do they find?</a></li>
+    <li><a href="/blog/20-minute-visibility-self-audit/">The 20-minute visibility self-audit (no tools, no dashboard)</a></li>
+    <li><a href="/blog/cited-on-wikipedia/">How does your work end up cited on Wikipedia? Not by you.</a></li>
+  </ul>
+</aside>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <a class="site-footer__logo" href="https://loudcamel.com/">
+      <img src="https://loudcamel.com/logo-mark.png" alt="Loud Camel" width="auto" height="32">
+    </a>
+    <nav class="site-footer__nav">
+      <div class="site-footer__primary">
+        <a href="/blog/">Blog</a>
+      </div>
+      <div class="site-footer__legal">
+        <a href="https://loudcamel.com/blog/feed.xml" type="application/atom+xml" rel="alternate" title="RSS feed">RSS</a>
+      </div>
+    </nav>
+    <p class="site-footer__copy">© 2026 Loud Camel. The service closed in 2026; these notes stay online.</p>
+  </div>
+</footer>
+
+</body>
+</html>

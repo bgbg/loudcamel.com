@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Should a language model review your paper? — Loud Camel</title>
+<meta name="description" content="A 2025 preprint by Sebastian Porsdam Mann and colleagues argues large language models should take over narrow, supervised parts of peer review, and stay away from the human judgment that makes it legitimate. My take, with a preprint&#39;s caveats.">
+<link rel="canonical" href="https://loudcamel.com/blog/ai-and-the-future-of-peer-review/">
+<meta name="author" content="Boris Gorelik">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://loudcamel.com/blog/ai-and-the-future-of-peer-review/">
+<meta property="og:title" content="Should a language model review your paper?">
+<meta property="og:description" content="A 2025 preprint by Sebastian Porsdam Mann and colleagues argues large language models should take over narrow, supervised parts of peer review, and stay away from the human judgment that makes it legitimate. My take, with a preprint&#39;s caveats.">
+<meta property="og:image" content="https://loudcamel.com/logo-mark.png">
+<meta property="og:site_name" content="Loud Camel">
+<meta property="article:published_time" content="2026-08-25T00:00:00+00:00">
+<meta property="article:author" content="Boris Gorelik">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Should a language model review your paper?">
+<meta name="twitter:description" content="A 2025 preprint by Sebastian Porsdam Mann and colleagues argues large language models should take over narrow, supervised parts of peer review, and stay away from the human judgment that makes it legitimate. My take, with a preprint&#39;s caveats.">
+<meta name="twitter:image" content="https://loudcamel.com/logo-mark.png">
+
+<!-- Brand assets (shared with the app by absolute URL so they never drift) -->
+<link rel="icon" type="image/png" href="https://loudcamel.com/favicon.png">
+<link rel="apple-touch-icon" href="https://loudcamel.com/apple-touch-icon.png">
+
+<!-- Fonts: Adored Vintage (Bricolage Grotesque + Inter Tight), matching the app's frontend/index.html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Inter+Tight:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/blog/assets/css/design-tokens.css">
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+
+<!-- RSS/Atom -->
+<link rel="alternate" type="application/atom+xml" title="Loud Camel Blog" href="/blog/feed.xml">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://loudcamel.com/blog/ai-and-the-future-of-peer-review/" },
+  "headline": "Should a language model review your paper?",
+  "description": "A 2025 preprint by Sebastian Porsdam Mann and colleagues argues large language models should take over narrow, supervised parts of peer review, and stay away from the human judgment that makes it legitimate. My take, with a preprint's caveats.",
+  "image": "https://loudcamel.com/logo-mark.png",
+  "datePublished": "2026-08-25T00:00:00+00:00",
+  "dateModified": "2026-08-25T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Boris Gorelik",
+    "url": "https://loudcamel.com",
+    "sameAs": ["https://orcid.org/0009-0006-7721-5175"]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Loud Camel",
+    "url": "https://loudcamel.com",
+    "logo": { "@type": "ImageObject", "url": "https://loudcamel.com/logo-mark.png" }
+  },
+  "keywords": ["ai-tools","research-ethics","academic-writing","science-of-science"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://loudcamel.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://loudcamel.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Should a language model review your paper?", "item": "https://loudcamel.com/blog/ai-and-the-future-of-peer-review/" }
+  ]
+}
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="https://loudcamel.com/">
+      <img class="brand__mark" src="https://loudcamel.com/logo-mark.png" alt="Loud Camel" width="64" height="64">
+      <span class="brand__text">
+        <span class="brand__name">Loud Camel</span>
+        <span class="brand__tag">Notes on research visibility</span>
+      </span>
+    </a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="/blog/">Blog</a>
+      <a href="/blog/topics/">Topics</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="site-main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="https://loudcamel.com/">Home</a> ›
+  <a href="/blog/">Blog</a> ›
+  <span>Should a language model review your paper?</span>
+</nav>
+
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">Should a language model review your paper?</h1>
+    <p class="post__meta">
+      By Boris Gorelik ·
+      <time datetime="2026-08-25T00:00:00+00:00">August 25, 2026</time>
+    </p>
+  </header>
+
+  <div class="post__body">
+    <p>You submit a paper and then you wait. Weeks pass, then months. When the reviews finally land, one of them is three sentences long and the other clearly read a different paper than the one you wrote. Now turn the desk around. Your own inbox is holding four review requests, three from editors you’ve never met, and you’re the same tired person who owes everyone else a review by Friday. If either of those scenes made you wince, you already understand the problem this paper is chewing on.</p>
+
+<p>The paper is a 2025 preprint, <a href="https://arxiv.org/abs/2509.14189">“AI and the Future of Academic Peer Review”</a> by Sebastian Porsdam Mann and colleagues (arXiv:2509.14189). Its argument, said plainly and up front: a language model can responsibly take over narrow, supervised parts of peer review, and it must not take over the human judgment that makes a review worth reading.</p>
+
+<h2 id="the-system-is-not-lightly-strained">The system is not lightly strained</h2>
+
+<p>The authors are blunt about the state of things. They describe “long publication delays, escalating reviewer burden concentrated on a small minority of scholars, inconsistent quality and low inter-reviewer agreement,” on top of the usual systematic biases. And the discouraging part: “decades of human-centered reforms have yielded only marginal improvements.” So the load really is piled on a few people, which is the second scene above, and the fixes we already tried barely moved it.</p>
+
+<h2 id="what-the-model-is-allowed-to-do">What the model is allowed to do</h2>
+
+<p>Here is the useful half. The paper argues that “targeted, supervised LLM assistance can plausibly improve error detection, timeliness, and reviewer workload without displacing human judgment.” Think of the mechanical jobs: checking whether a proof holds, flagging a citation that is missing, catching a statistic that cannot be right, pointing a reviewer at the three claims out of fifty that actually need a human to think hard. The authors go further and sketch fine-tuned, retrieval-augmented, and multi-agent systems that could make review “more reliable, auditable, and interdisciplinary.” Keep the word supervised in view. It is carrying most of the weight in that sentence.</p>
+
+<h2 id="what-the-model-is-not-allowed-to-do">What the model is not allowed to do</h2>
+
+<p>Now the half that should worry you. The authors list the failure modes as “hallucination, confidentiality, gaming, novelty recognition, and loss of trust,” and they refuse to file these under details to patch later. In their word, these problems are “constitutive” of what makes review legitimate, which makes them “governance choices as much as technical capacity.”</p>
+
+<p>Two of them are worth stopping on. Confidentiality: your unpublished manuscript is a secret you handed to one editor, and pasting it into a commercial chatbot quietly breaks that promise for everyone who trusted you with it. And novelty recognition, which is my shorthand for the model faking competence: a language model is very good at producing a confident, fluent review of a paper it doesn’t actually understand, and a genuinely new idea is close to the one thing it never saw in training. A tired human at least half-knows when they are bluffing. The model does not know at all.</p>
+
+<h2 id="my-take-with-the-caveats-a-preprint-earns">My take, with the caveats a preprint earns</h2>
+
+<p>Where do I land? The paper’s own recommendation is the sober one, and I agree with it: reject both “uncritical adoption [and] reflexive rejection,” and run instead “carefully scoped pilots with explicit evaluation metrics, transparency, and accountability.”</p>
+
+<p>Two caveats before you quote it at your next lab meeting. First, this is a preprint. It has not itself been through peer review, which is a small irony worth saying out loud, so treat its framing as a well-argued position and not a settled result. Second, “supervised” is cheap to write and expensive to enforce. The thing that goes wrong is not a rogue AI seizing the journal. It is a swamped reviewer who lets the model draft the whole review and then skims the output, and no editor can see that from the outside.</p>
+
+<h2 id="why-you-should-care-on-both-sides-of-the-desk">Why you should care, on both sides of the desk</h2>
+
+<p>If you submit papers, the confidentiality problem is already yours, today, policy or no policy: someone in your review pile may be feeding your manuscript to a model right now. If you review papers, the honest question the paper hands you is which parts of your own reviewing are the mechanical parts a machine could take, and which parts are the judgment you’re willing to sign your name under. That line is the entire debate, compressed.</p>
+
+<p>The paper doesn’t draw the line for you, and I’m not going to pretend I can either. But once you’ve waited most of a year for two careless reviews, “let the machine help, carefully” stops sounding reckless and starts sounding like the least bad option on the table. I might be wrong about how careful anyone will actually bother to be.</p>
+
+  </div>
+  <footer class="post__taxonomy">
+    <a class="chip chip--category" href="/blog/category/science-of-science/">science-of-science</a>
+    <a class="chip" href="/blog/tag/ai-tools/">ai-tools</a>
+    <a class="chip" href="/blog/tag/research-ethics/">research-ethics</a>
+    <a class="chip" href="/blog/tag/academic-writing/">academic-writing</a>
+    <a class="chip" href="/blog/tag/science-of-science/">science-of-science</a>
+  </footer>
+</article>
+<aside class="related">
+  <h2>Keep reading</h2>
+  <ul>
+    <li><a href="/blog/pedigree-outranks-papers/">Does your PhD's pedigree decide your career more than your papers do?</a></li>
+    <li><a href="/blog/what-a-mentor-actually-gives-you/">What does a great mentor actually give you? (Not their topic.)</a></li>
+    <li><a href="/blog/does-a-career-grant-stop-brain-drain/">Does a career grant actually stop brain drain?</a></li>
+  </ul>
+</aside>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <a class="site-footer__logo" href="https://loudcamel.com/">
+      <img src="https://loudcamel.com/logo-mark.png" alt="Loud Camel" width="auto" height="32">
+    </a>
+    <nav class="site-footer__nav">
+      <div class="site-footer__primary">
+        <a href="/blog/">Blog</a>
+      </div>
+      <div class="site-footer__legal">
+        <a href="https://loudcamel.com/blog/feed.xml" type="application/atom+xml" rel="alternate" title="RSS feed">RSS</a>
+      </div>
+    </nav>
+    <p class="site-footer__copy">© 2026 Loud Camel. The service closed in 2026; these notes stay online.</p>
+  </div>
+</footer>
+
+</body>
+</html>
